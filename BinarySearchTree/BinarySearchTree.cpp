@@ -52,4 +52,19 @@ public :
 			parent->rightchild = newNode;  // Make The Right Child Of TheParent Point to The New Node
 		}
 	}
+
+	void search(string element, Node*& parent, Node*& currentNode) {
+		// This Function Searches The CurrentNode Of The Specified Node As Well As The Current Node Of Its Parent
+
+		currentNode = ROOT;
+		parent = NULL;
+		while ((currentNode != NULL) && (currentNode->info != element)) {
+
+			parent = currentNode;
+			if (element < currentNode->info)
+				currentNode = currentNode->leftchild;
+			else
+				currentNode = currentNode->rightchild;
+		}
+	}
 };

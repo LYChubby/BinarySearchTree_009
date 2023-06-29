@@ -132,7 +132,7 @@ int main() {
 		cout << endl;
 
 		switch (ch); {
-
+			Ca
 		}
 	}
 }

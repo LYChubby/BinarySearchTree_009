@@ -131,8 +131,17 @@ int main() {
 		cin >> ch;
 		cout << endl;
 
-		switch (ch); {
-			Ca
+		switch (ch) {
+
+		case '1': {
+
+			cout << "Enter A Word : ";
+			string word;
+			cin >> word;
+			obj.insert(word);
+			break;
+			}
+
 		}
 	}
 }
